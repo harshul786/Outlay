@@ -1,9 +1,27 @@
+import Dashboard from "./Components/Dashboard/Dashboard"
+import Login from "./Components/login/login"
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <Router>
+    <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/users">
+            <Users />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+     </Router>
+    
   );
 }
 
