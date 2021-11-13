@@ -16,7 +16,7 @@
 .profile-Container{
     display: flex;
     flex-direction: column;
-    margin: 0rem 5rem 0rem 5rem;
+    margin: 5rem 5rem 3rem 5rem;
     padding: 1rem;
 }
 
@@ -33,6 +33,7 @@
 .form__label_Profile {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
+    font-weight: bold;
     margin-left: 2rem;
     margin-top: 0.7rem;
     margin-bottom: 0.7rem;
@@ -103,19 +104,25 @@
     font-family: 'M PLUS Rounded 1c';
     margin-bottom: 3rem;   
     margin-top: 2rem;
-    display: flex;
-    align-content: flex-end;
+    
     /* justify-content: end; */
+}
+.profile-end{
+    display: flex;
+    justify-content: space-between;
 }
 
 @media screen and (max-width:630px){
     .profile-Container{
-        margin: 0rem 1rem 0rem 1rem;
+        margin: 5rem 1rem 3rem 1rem;
     }
     .form__label_Profile{
         margin-left: 0rem;
     }
-    .button-Profile{
+    .profile-space{
+        display: none;
+    }
+    .profile-end{
         justify-content: center;
     }
     .form__input_Profile{

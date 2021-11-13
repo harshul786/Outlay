@@ -33,7 +33,7 @@
 
 .nav-button--grp2 {
     margin-right: 2rem;
-    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    padding: 0.7rem 1.4rem 0.7rem 1.4rem;
     font-size: 12px;
     border-radius: 4px;
     font-family: 'Lato', sans-serif;
@@ -72,7 +72,6 @@
 .sec2-text{
     font-family: Poppins;
     margin: auto;
-    margin-right: 5rem;
     text-align: center;
     width: 50%;
     padding: 10px;
@@ -112,16 +111,13 @@
 .dash-hero-details{
     display: flex;
     flex-direction: row;
-    padding: 0.5rem;
-    /* margin-top: 2rem; */
+    padding: 0.7rem;
     font-family: Poppins;
-    
+    border-bottom: 4px solid white;
     justify-content: space-around;
 }
 
 .Border{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     background-color: #ffe6eb;
     border-radius: 0.5rem;
 }
@@ -158,6 +154,17 @@
     flex-direction: row;
     justify-content: space-around;
 } */
+.dash-section2-content--heading{
+    font-weight: bold;
+}
+
+@media screen and (max-width:800px){
+    .dash-hero-details{
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+}
+
 
 @media screen and (max-width:650px){
     .dash-section2-content {
@@ -200,4 +207,9 @@
     .dash-hero,.dash-section2,.dash-section3--heading,.dash-section4-head{
         margin: 0px;
     }
+}
+
+
+.visiblity-continue-learning--nothing{
+    display: none;
 }

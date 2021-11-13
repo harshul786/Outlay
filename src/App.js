@@ -16,6 +16,8 @@ import Pred from "./Components/prediction/Pred";
 import Profile from "./Components/Profile/Profile";
 import CourseOver from "./Components/course overview/CourseOver";
 import Basic from "./Components/Basics/Basic";
+import Spinner from "./Components/spinner/spinner";
+import Alert_messg from "./Components/message/message";
 
 function App() {
   return (
@@ -58,7 +60,11 @@ function App() {
             <IntroCourse />
             <Footer />
           </Route>
-          {/* Protected Routes */}
+          <Route exact path="/spinner">
+            <Spinner />
+            <Footer />
+          </Route>
+          
           <Route exact path="/course-1-pg2">
             <Basic />
             <Footer />
@@ -79,6 +85,9 @@ function App() {
           <Route path="*">
             <Error />
             <Footer />
+          </Route>
+          <Route exact path="/message">
+            <Alert_messg/>
           </Route>
       </Switch>
     </Router>
