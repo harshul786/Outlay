@@ -17,8 +17,7 @@ import Profile from "./Components/Profile/Profile";
 import CourseOver from "./Components/course overview/CourseOver";
 import Basic from "./Components/Basics/Basic";
 import Spinner from "./Components/spinner/spinner";
-// import alert_cont from "./Components/message/message";
-import { Container, Alert} from 'react-bootstrap'
+import Alert_messg from "./Components/message/message";
 
 function App() {
   return (
@@ -80,9 +79,7 @@ function App() {
             <Footer />
           </Route>
           <Route exact path="/message">
-            <Container>
-                <Alert color="primary">HI! I am an Alert</Alert>
-            </Container>
+            <Alert_messg/>
           </Route>
       </Switch>
     </Router>
