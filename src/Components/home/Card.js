@@ -1,6 +1,21 @@
 import React from 'react';
 import "./card.css";
 const Card = (props) => {
+
+    const url="http://localhost:3001"
+    const getUser= async() =>{
+        const res = await fetch(`${url}/api/v1/user/getuser`, {
+            method : "GET",
+            headers: {
+                "Content-Type": "application/json",
+                "authToken":localStorage.getItem('token')
+            }
+        })
+        let json = await res.json()
+        console.log(json)
+    }
+
+
     return (
         <>
             <div className="third-container--card">
@@ -15,7 +30,7 @@ const Card = (props) => {
                         </div>
                 </div>
                 <div className={`third-container--card-button ${props.working === "false" && "inactiveLink"}`} >
-                    <a href={props.page === "home" ? "/login"  :"/course-1-pg1"}>{props.working === "false" ? "Coming Soon" : "Get Started"}</a>
+                    <a onClick={getUser} href={props.page === "home" ? "/login"  :"/course-1-pg1"}>{props.working === "false" ? "Coming Soon" : "Get Started"}</a>
                 </div>
             </div>
         </>

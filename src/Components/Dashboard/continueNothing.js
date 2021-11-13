@@ -3,7 +3,7 @@ import React from 'react'
 import './continueNothing.css'
 
 
-const ContinueNothing = () => {
+const ContinueNothing = (props) => {
     return (
         <>
             <div className="cl-main">
@@ -19,12 +19,14 @@ const ContinueNothing = () => {
                                 Complete Guide to Stock Market investment from scratch
                                 </p>
                                 <p className="cl-text-completion">
-                                    Course Status: 68% Completed 
+                                    Course Status: {props.percent}% Completed 
                                 </p>
                             </div>
+                            {props.percent === 100 ? <></> :
                             <div className="goalsnav">
-                            <a href ="/#" className="nav-button--grp2 primary--button2 bb">Continue</a>
+                            <a href ="/course-1-pg2" className="nav-button--grp2 primary--button2 bb">Continue</a>
                             </div>
+                            }
                         </div>
                     </div>
                 </div>

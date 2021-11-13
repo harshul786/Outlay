@@ -46,7 +46,7 @@ const CourseOver = () => {
 
             <div className="course-main--name">
                 <div className="course-name--card">
-                Let’s jump right in, Divyanshi!
+                Let’s jump right in!
                 </div>
                 <div className="dash-section3--img--contentainer">
                         <div className="courseOver--img--content">

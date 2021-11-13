@@ -65,7 +65,7 @@ const Login = () => {
 
                     <label className="field field_v3 mm">
 
-                    &nbsp;&nbsp;Don't have an account? &nbsp;<a href="/#">Sign Up </a>
+                    &nbsp;&nbsp;Don't have an account? &nbsp;<a href="/signup">Sign Up </a>
                     <div className="nav-button2">
                         <a href ="/#" onClick={submit}  className="nav-button2--grp2 primary--button2">Login</a>
                     </div>     

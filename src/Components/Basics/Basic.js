@@ -1,7 +1,42 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './Basic.css';
 
 const Basic = () => {
+
+
+
+    const url="http://localhost:3001"
+
+    const getCourse=async()=>{
+        const res = await fetch(`${url}/api/v1/goal/getgoal`, {
+            method : "GET",
+            headers: {
+                "Content-Type": "application/json",
+                "authToken":localStorage.getItem('token')
+            }
+        })
+        let json = await res.json()
+        console.log(json[0]._id)
+        let body={
+            "cName": "Complete Guide to Stock Market investment from scratch",
+            "cPercent": "100"
+        }
+        const nextres = await fetch(`${url}/api/v1/goal/getgoal/${json[0]._id}`, {
+            method : "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "authToken":localStorage.getItem('token')
+            },
+            body:JSON.stringify(body)
+        })
+        json = await nextres.json()
+        console.log(json)
+
+    }
+
+    useEffect(() => {
+        getCourse()
+    }, [])
     return (
         <>
             <div className="basic-main--container">

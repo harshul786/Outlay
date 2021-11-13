@@ -16,6 +16,7 @@ const Pred = () => {
         goalReturns: 0,
         goalMInvest: 0
     })
+    const [show, setshow] = useState("hidden")
 
     const setGoal = async (e) => {
         e.preventDefault()
@@ -38,6 +39,7 @@ const Pred = () => {
             let json = await res.json()
             console.log(json)
         }
+        setshow("show")
     }
 
     useEffect(() => {
@@ -80,7 +82,7 @@ const Pred = () => {
 
                         <div className="pred-hero--form-button-container">
                             <div className="buttonn">
-                                <a href="/#" className="nav-button--grp3 primary--button3">Suggest me</a>
+                                <a href="/course-overview" className="nav-button--grp3 primary--button3">Suggest me</a>
                             </div>
                             <div className="buttonn">
                                 <a href="/#" className="nav-button--grp6 primary--button6" type="submit" onClick={setGoal}>Add this to goal</a>
@@ -89,7 +91,7 @@ const Pred = () => {
                     </div>
                 </div>
                 {userGoal.goalReturns > 1000000 ?
-                <div className="pred-second--container">
+                <div className={`pred-second--container ${show === "hidden" && "hidden"}`}>
                     <h1 className="pred-second--heading">Our Suggestions: &nbsp;&nbsp;<span className="pred-second--span">Look's like you can acheve it</span></h1>
                     <div className="pred-second--card">
 
@@ -108,7 +110,7 @@ const Pred = () => {
                     </div>
                 </div>
                 :
-                <div className="pred-second--container">
+                <div className={`pred-second--container  ${show === "hidden" && "hidden"}`}>
                     <h1 className="pred-second--heading">Our Suggestions: &nbsp;&nbsp;<span className="pred-second--span">Look's like you can acheve it</span></h1>
                     <div className="pred-second--card">
                         <div>

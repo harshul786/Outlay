@@ -17,7 +17,7 @@ import Profile from "./Components/Profile/Profile";
 import CourseOver from "./Components/course overview/CourseOver";
 import Basic from "./Components/Basics/Basic";
 import Spinner from "./Components/spinner/spinner";
-import Alert_messg from "./Components/message/message";
+// import Alertmessg from "./Components/message/message";
 
 function App() {
   return (
@@ -82,13 +82,14 @@ function App() {
             <Error />
             <Footer />
           </Route>
+          {/* <Route exact path="/message">
+            <Alertmessg/>
+          </Route> */}
           <Route path="*">
             <Error />
             <Footer />
           </Route>
-          <Route exact path="/message">
-            <Alert_messg/>
-          </Route>
+          
       </Switch>
     </Router>
 
