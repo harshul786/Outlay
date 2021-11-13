@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=M+PLUS+Rounded+1c:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.course-main--container{
+    font-family: 'Roboto';
+    background-color: white;
+}
+.course-main--hero{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 135, 161, 0.16);
+    width: inherit;
+    height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.course-hero--img{
+    height: 47vh;
+    width: auto;
+}
+
+.course-hero--button{
+    font-size: 18px;
+    color: white;
+    background-color: #5BB8CD;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.nav-button--grp4 {
+    margin-right: 2rem;
+    padding: 0.6rem 2rem 0.6rem 2rem;
+    font-size: 24px;
+    border-radius: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+.primary--button4 {
+    background-color: #5BB8CD;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+.primary--button4:hover{
+    background-color: rgb(35, 164, 176);
+    color: white;
+}
+
+
+
+.course-reco--cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: 8rem;
+    zoom: 80%;
+}
+
+.bluebox{
+    padding: 1rem 2rem 1rem 2rem;
+    width: 250px;
+    height: 50px;
+    background-color: #d8eef3;
+    font-weight: bold;
+    opacity: 90%;
+    margin: 1.5rem;
+    flex: 1 0 21%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    font-size: 30px;
+}
+
+
+.course-name--card,.course-reco--heading{
+    font-size: 36px;
+    margin-left: 4rem;
+    font-weight: bold;
+}
+.course-main--reco,.course-main--name{
+    display: grid;
+    grid-gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* .cards2co::-webkit-scrollbar{
+    display: -webkit-inline-box;
+} */
+
+
+
+
+.courseOver3-content{
+    display: flex;
+    justify-content: center;
+}
+
+.dash-section3--img--contentainer{
+    margin: 0rem 3rem;
+    padding: 2rem;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: auto;
+    margin-bottom: 2rem;
+    font-size:24px ;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.courseOver--img{
+    width: auto;
+    height: 250px;
+    object-fit: fill;
+    padding: 2rem;
+}
+
+@media screen and (max-width:650px){
+    .dash-section3--img--contentainer{
+        flex-direction: column;
+        margin: 0rem 0rem;
+        padding: 0px;
+        zoom:90%;
+    }
+    .nav-button--grp4{
+        margin: 0px;
+        zoom:80%
+    }
+    .course-reco--cards{
+        margin-inline: 4rem;
+        zoom:50%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .course-main--hero{
+        flex-direction: column-reverse;
+
+    }
+    .course-hero--button{
+        zoom:65%;
+    }
+    .jump--img{
+        width: auto;
+    }
+    .course-hero--img{
+        height: 30vh;
+    }
+    .course-reco--heading,.course-name--card{
+        font-size: 24px;
+        margin-left: 1rem;
+    }
+    .courseOver--img{
+        height: 200px;
+    }
+
+}

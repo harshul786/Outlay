@@ -1,0 +1,79 @@
+.introcourse-main--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.introcourse-main--block{
+    background-color: #2B546A;
+    height: 50vh;
+}
+.introcourse-main-heading--container{
+    margin: 3rem 3rem 3rem 3rem;
+    color: #2B546A;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+}
+.introcourse-main-para--container1{
+    background: rgba(91, 184, 205, 0.1);
+    overflow: hidden;
+    margin: 0rem 5rem 2rem 5rem;
+    border-radius: 10px;
+}
+.introcourse-main-para--container2{
+    background: rgba(91, 184, 205, 0.1);
+    overflow: hidden;
+    margin: 2rem 5rem 2rem 5rem;
+    border-radius: 10px;
+}
+.introcourse-main--para{
+    padding: 4rem;
+    font-size: 20px;
+    font-family: Lato;
+    Font-style: Regular;
+}
+.introcourse-main--button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0rem 2rem 0rem;
+}
+.introcourse-main--link{
+    color: white;
+    background-color: #5BB8CD;
+    padding: 0.7rem 2rem 0.7rem 2rem;
+    border-radius: 2px;
+}   
+.introcourse-main--link:hover{
+    background-color: #5bb8cde3;
+}
+
+@media (max-width: 657px){
+    .introcourse-main-heading--container{
+        font-size: 18px;
+    }
+    .introcourse-main--para{
+        font-size: 16px;
+    }
+}
+@media (max-width: 517px){
+    .introcourse-main-heading--container{
+        font-size: 14px;
+    }
+    .introcourse-main--para{
+        font-size: 14px;
+        padding: 2rem;
+    }
+    .introcourse-main-para--container1{
+        margin: 0rem 3rem 2rem 3rem;
+    }
+    .introcourse-main-para--container2{
+        margin: 0rem 3rem 2rem 3rem;
+    }
+    .introcourse-main--link{
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    }
+}

@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: 62,5%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+.pred-second--card{
+    display: flex;
+    flex-direction: column;
+}
+
+.pred-hero--heading{
+    font-family: 'Lato';
+    font-weight: bold;
+    color: #2B546A;
+    margin-bottom: 0.6rem;
+}
+.pred-second--heading{
+    margin-top: 2rem;
+    font-family: 'Lato';
+    font-weight: bold;
+    color: black;
+    display: flex;
+
+}
+
+.pred-second--span{
+    font-family: 'Lato';
+    font-weight: normal;
+    color: #2B546A;
+}
+
+.form__label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+  }
+  
+  .form__input {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+      margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: 6px solid #2B546A;
+    width: 90%;
+    display: block;
+    /* border-bottom: 0.3rem solid transparent; */
+    transition: all 0.3s;
+  }
+  
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+  }
+  
+/* backgroud */
+
+  .pred-main--container{
+    padding-top: 2rem;
+    background-color: #F9FBFE;
+    font-family: M PLUS Rounded 1c; 
+    /* margin-right: 2rem; */
+  }
+
+  .pred-hero--container,.pred-second--container{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 5rem 0rem 5rem;
+  }
+
+  .pred-hero--form{
+      display: grid;
+      padding: 1rem;
+      grid-gap: 1rem;
+      zoom: 80%;
+      margin-top: 1rem;
+
+  }
+
+
+  /* button */
+
+  .nav-button--grp6 {
+    margin-right: 2rem;
+    padding: 0.6rem 4rem 0.6rem 4rem;
+    font-size: 24px;
+    border-radius: 2px;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+.primary--button6 {
+    background-color: rgb(48, 200, 214);
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+.primary--button6:hover{
+    background-color: rgb(35, 164, 176);
+    color: white;
+}
+
+.nav-button--grp3 {
+    margin-right: 2rem;
+    padding: 0.6rem 4rem 0.6rem 4rem;
+    font-size: 24px;
+    border-radius: 2px;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+.primary--button3 {
+    background-color: #FF476F;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+.primary--button3:hover{
+    background-color: #ff1a4b;
+    color: white;
+}
+.buttonn{
+    font-family: 'M PLUS Rounded 1c';
+    margin-bottom: 1rem;   
+}
+
+.pred-hero--form-button-container{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    /* flex-wrap: wrap; */
+
+}
+
+.pred-second--card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:650px){
+    .pred-hero--container {
+        zoom: 75%;
+        width: auto;
+        margin-right: 2rem;
+    }
+    .pred-hero--container, .pred-second--container{
+        margin: 0rem 1rem 0rem 1rem;
+    }
+    .pred-card--container,.pred-second--heading{
+        zoom:60%;
+    }
+    .pred-second--heading{
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .nav-button--grp6{
+        padding: 0.6rem 2.7rem 0.6rem 2.7rem;
+        
+        
+    }
+    .pred-hero--form-button-container{
+        display: grid;
+        grid-gap: 1rem;
+    }
+
+}

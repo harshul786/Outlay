@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: 20,5%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+.profile-Container{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 5rem 0rem 5rem;
+    padding: 1rem;
+}
+
+.profile-heading{
+    font-family: 'Lato';
+    font-weight: bold;
+    color: #2B546A;
+    margin-bottom: 0.8rem;
+    margin-top: 1rem;
+}
+
+/* textbox */
+
+.form__label_Profile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+    height: 37.6px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form__input_Profile {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+      margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: 5.5px solid #2B546A;
+    width: 75%;
+    height: 0.1rem;
+    display: block;
+    /* border-bottom: 0.3rem solid transparent; */
+    transition: all 0.3s;
+  }
+  
+  /* .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+  } */
+
+
+  .form__group_Profile{
+      display: flex;
+      padding: 0.7rem;
+  }
+
+  .right-context{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /* button */
+
+  .nav-button--grp-Profile {
+    margin-right: -2rem;
+    padding: 0.6rem 2rem 0.6rem 2.2rem;
+    font-size: 18px;
+    border-radius: 2px;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+.primary--button-Profile {
+    background-color: #FF476F;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+.primary--button-Profile:hover{
+    background-color: #ff1a4b;
+    color: white;
+}
+.button-Profile{
+    font-family: 'M PLUS Rounded 1c';
+    margin-bottom: 3rem;   
+    margin-top: 2rem;
+    display: flex;
+    align-content: flex-end;
+    /* justify-content: end; */
+}
+
+@media screen and (max-width:630px){
+    .profile-Container{
+        margin: 0rem 1rem 0rem 1rem;
+    }
+    .form__label_Profile{
+        margin-left: 0rem;
+    }
+    .button-Profile{
+        justify-content: center;
+    }
+    .form__input_Profile{
+        padding: 1.5rem 1rem ;
+        font-size: 1rem;
+    }
+}
