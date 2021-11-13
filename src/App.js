@@ -36,24 +36,29 @@ function App() {
             <Signup />
             <Footer />
           </Route>
+          {/* Protected Routes */}
           <Route exact path="/login/dashboard">
             <Dashboard />
             <Footer />
           </Route>
           {/* Completely */}
+          {/* Protected Routes */}
           <Route exact path="/login/prediction">
             <Pred />
             <Footer />
           </Route>
           {/* Small Changes */}
+          {/* Protected Routes */}
           <Route exact path="/login/profile">
             <Profile />
             <Footer />
           </Route>
+          {/* Protected Routes */}
           <Route exact path="/course-1-pg1">
             <IntroCourse />
             <Footer />
           </Route>
+          {/* Protected Routes */}
           <Route exact path="/course-1-pg2">
             <Basic />
             <Footer />
@@ -67,7 +72,11 @@ function App() {
             <Pc />
             <Footer />
           </Route>
-          <Route path="/404">
+          <Route exact path="/404">
+            <Error />
+            <Footer />
+          </Route>
+          <Route path="*">
             <Error />
             <Footer />
           </Route>

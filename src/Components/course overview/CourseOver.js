@@ -58,7 +58,7 @@ const CourseOver = () => {
                             <p className="courseOver3-content">Cryptocurrency</p>
                         </div>
                         <div className="courseOver--img--content">
-                            <img src="./images/mutual funds vector.png" alt="" className="courseOver--img" />
+                            <img src="./images/mutual-funds-vector.png" alt="" className="courseOver--img" />
                             <p className="courseOver3-content">Mutual Funds</p>
                         </div>
                     </div>

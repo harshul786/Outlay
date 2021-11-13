@@ -1,10 +1,49 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './dashboard.css'
 // import DashCard from './DashCard'
 // import ToDo from './todo'
 import Card from '../home/Card'
+import { useHistory } from 'react-router'
+import Goal from './Goal'
 
 const Dashboard = () => {
+    const url="http://localhost:3001"
+    const history = useHistory()
+    const [userGoal, setuserGoal] = useState([])
+    const getUser= async() =>{
+        const res = await fetch(`${url}/api/v1/user/getuser`, {
+            method : "GET",
+            headers: {
+                "Content-Type": "application/json",
+                "authToken":localStorage.getItem('token')
+            }
+        })
+        let json = await res.json()
+        console.log(json)
+    }
+
+    const getGoal =async()=>{
+        const res = await fetch(`${url}/api/v1/goal/getgoal`, {
+            method : "GET",
+            headers: {
+                "Content-Type": "application/json",
+                "authToken":localStorage.getItem('token')
+            }
+        })
+        let json = await res.json()
+        console.log(json)
+        setuserGoal(json)
+    }
+
+    useEffect(() => {
+        if(localStorage.getItem('token') != null){
+            getUser()
+            getGoal()
+        }else{
+            history.push("/login")
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
     return (
         <>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"></link>
@@ -18,46 +57,15 @@ const Dashboard = () => {
                         {/* </h1> */}
                         </div>
                         <div className="goalsnav">
-                        <a href ="/#" className="nav-button--grp2 primary--button2">Add Goals</a>
+                        <a href ="/login/prediction" className="nav-button--grp2 primary--button2">Add Goals</a>
                         </div>
                     </div>
                     <div className="Border">
-                    <div className="dash-hero-details">
-                        <div className="dash-hero-detials--title">
-                            <p className="dash-hero-detials--title_goals">Mere Goals</p>
-                        </div>
-                        <div>
-                            <p className="dash-hero-detials--title_amount">$4,000</p>
-                        </div>
-                        <div className="dash-hero-details--content">
-                            <p className="dash-hero-details--content_time">10 Years</p>
-                            <p className="dash-hero-details--content_time">$1000/ Per month</p>
-                         </div>
-                    </div>
-                    <div className="dash-hero-details">
-                        <div className="dash-hero-detials--title">
-                            <p className="dash-hero-detials--title_goals">Mere Goals</p>
-                        </div>
-                        <div>
-                            <p className="dash-hero-detials--title_amount">$4,000</p>
-                        </div>
-                        <div className="dash-hero-details--content">
-                            <p className="dash-hero-details--content_time">10 Years</p>
-                            <p className="dash-hero-details--content_time">$1000/ Per month</p>
-                         </div>
-                    </div>
-                    <div className="dash-hero-details">
-                        <div className="dash-hero-detials--title">
-                            <p className="dash-hero-detials--title_goals">Mere Goals</p>
-                        </div>
-                        <div>
-                            <p className="dash-hero-detials--title_amount">$4,000</p>
-                        </div>
-                        <div className="dash-hero-details--content">
-                            <p className="dash-hero-details--content_time">10 Years</p>
-                            <p className="dash-hero-details--content_time">$1000/ Per month</p>
-                         </div>
-                    </div>
+                    
+                    {userGoal.length === 0 ? <h2>Does't look like you have added any goal, Create one now</h2> :userGoal.map((singleGoal,key)=>{
+                        return <Goal GoalName={`I will Get a ${singleGoal.goalName}`} GoalAmount={`Need ${singleGoal.goalReturns}`} GoalTime={`In ${singleGoal.goalTime} Years`} GoalInvest={`Will invest ${singleGoal.goalMInvest} Monthly`} key={key}/>
+                    })}
+
                     </div>
                 </div>
 
@@ -77,19 +85,19 @@ const Dashboard = () => {
                 </div>
                 <div className="dash-section3">
                     <div className="dash-section3-head">
-                        <h1 className="dash-section3--heading">Courses you might be intrested in...</h1>
+                        <h1 className="dash-section3--heading">Courses you might be intrested in... </h1>
                     </div>
                     <div className="dash-section3--img--content">
                         <div className="dash-section3-img-content">
-                            <img src="./images/stocklearn-01.png" alt="" className="dash-section3--img" />
+                            <img src="../images/stocklearn-01.png" alt="" className="dash-section3--img" />
                             <p className="dash-section3-content">Stocks</p>
                         </div>
                         <div className="dash-section3-img-content">
-                            <img src="./images/bitcoin.png" alt="" className="dash-section3--img" />
+                            <img src={"../images/bitcoin.png"} alt="" className="dash-section3--img" />
                             <p className="dash-section3-content">Cryptocurrency</p>
                         </div>
                         <div className="dash-section3-img-content">
-                            <img src="./images/mutual funds vector.png" alt="" className="dash-section3--img" />
+                            <img src={"../images/mutual-funds-vector.png"} alt="" className="dash-section3--img" />
                             <p className="dash-section3-content">Mutual Funds</p>
                         </div>
                     </div>
@@ -100,9 +108,9 @@ const Dashboard = () => {
                 <div className="dash-section4">
                     
                 <div className="third-container--card_container">
-                        <Card />
-                        <Card />
-                        <Card />
+                        <Card name="Complete Guide to Stock Market investment from scratch" working="true" />
+                        <Card name="Complete Guide to Stock Market investment from scratch" working="false"/>
+                        <Card name="Complete Guide to Stock Market investment from scratch" working="false"/>
                     </div>
                     <br></br>
                 </div>

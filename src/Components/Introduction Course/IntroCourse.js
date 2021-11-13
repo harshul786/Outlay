@@ -18,8 +18,8 @@ const IntroCourse = () => {
                         The 'hard' efficient-market hypothesis does not explain the cause of events such as the crash in 1987, when the Dow Jones Industrial Average plummeted 22.6 percent—the largest-ever one-day fall in the United States.</p>
                 </div>
                 <div className="introcourse-main--button">
-                    <a href="/#" className="introcourse-main--link">Go Back</a>
-                    <a href="/#" className="introcourse-main--link">Next Lecture</a>
+                    <a href="/login/dashboard" className="introcourse-main--link">Home</a>
+                    <a href="/course-1-pg2" className="introcourse-main--link">Next Lecture</a>
                 </div>
             </div>
         </>

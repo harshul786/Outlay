@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="first-container">
                     <div className="first-container-content">
                         <h1 className="first-container--heading">Learn<br /> the art of <br /> investing for free!!</h1>
-                        <a href="/#" className="first-container--getstarted">Get Started</a>
+                        <a href="/login" className="first-container--getstarted">Get Started</a>
                     </div>
                     <img src="./images/Bitcoin _Flatline.png" alt="" className="first-container--img" />
                 </div>
@@ -21,9 +21,9 @@ const Home = () => {
                 <div className="third-container">
                     <h1 className="third-container--heading">What have we got for you?</h1>
                     <div className="third-container--card_container">
-                        <Card />
-                        <Card />
-                        <Card />
+                        <Card name="Complete Guide to Stock Market investment from scratch" working="true" page="home"/>
+                        <Card name="Complete Guide to Stock Market investment from scratch" working="false"/>
+                        <Card name="Complete Guide to Stock Market investment from scratch" working="false"/>
                     </div>
                 </div>
                 <div className="fourth-container">

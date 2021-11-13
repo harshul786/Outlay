@@ -1,3 +1,9 @@
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.2;
+ }
+
 .pred-card--img {
     border-radius: 60%;
     width: 200px;

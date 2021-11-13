@@ -1,3 +1,9 @@
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.2;
+ }
+
 .third-container--card{
     background-color: white;
     display: flex;

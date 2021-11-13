@@ -32,8 +32,8 @@ const Basic = () => {
                     </p>
                 </div>
                 <div className="basic-main--button">
-                    <a href="/#" className="basic-main--link">Go Back</a>
-                    <a href="/#" className="basic-main--link">Next Lecture</a>
+                    <a href="/course-1-pg1" className="basic-main--link">Go Back</a>
+                    <a href="/login" className="basic-main--link">Hey You Just completed the course</a>
                 </div>
             </div>
         </>
