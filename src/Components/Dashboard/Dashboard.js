@@ -2,7 +2,8 @@ import React from 'react'
 import './dashboard.css'
 // import DashCard from './DashCard'
 // import ToDo from './todo'
-import Card from '../home/Card'
+import Card from './Card.js'
+import ContinueNothing from './continueNothing.js'
 
 const Dashboard = () => {
     return (
@@ -66,14 +67,22 @@ const Dashboard = () => {
                     <div className="dash-section2-heading">
                         <h2 className="dash-section2-heading--text">Continue Learning...</h2>
                     </div>
-                    <div className="dash-section2-content">
-                        <div className = "immg"><img src="./images/learning.png" alt="" className="dash-section2-content--img" />
-                        </div><div className = "sec2-text">
-                        <p className="dash-section2-content--text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum sed ipsam quo velit rerum dolore.</p>
-                        
-                        <p className="dash-section2-content--text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum sed ipsam quo velit rerum dolore.</p>
-                        </div>                    
-                    </div>
+                        <div className="visiblity-continue-learning--nothing">
+                            <div className="dash-section2-content">
+                                <div className = "immg"><img src="../images/learning.png" alt="" className="dash-section2-content--img" />
+                                </div><div className = "sec2-text">
+                                <p className="dash-section2-content--heading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum sed ipsam quo velit rerum dolore.</p>
+                                
+                                <p className="dash-section2-content--text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum sed ipsam quo velit rerum dolore.</p>
+                                </div> 
+                                  
+                            </div>   
+
+                        </div>
+                    
+                        <div>
+                            <ContinueNothing/>
+                        </div>
                 </div>
                 <div className="dash-section3">
                     <div className="dash-section3-head">
@@ -81,15 +90,15 @@ const Dashboard = () => {
                     </div>
                     <div className="dash-section3--img--content">
                         <div className="dash-section3-img-content">
-                            <img src="./images/stocklearn-01.png" alt="" className="dash-section3--img" />
+                            <img src="../images/stocklearn-01.png" alt="" className="dash-section3--img" />
                             <p className="dash-section3-content">Stocks</p>
                         </div>
                         <div className="dash-section3-img-content">
-                            <img src="./images/bitcoin.png" alt="" className="dash-section3--img" />
+                            <img src="../images/bitcoin.png" alt="" className="dash-section3--img" />
                             <p className="dash-section3-content">Cryptocurrency</p>
                         </div>
                         <div className="dash-section3-img-content">
-                            <img src="./images/mutual funds vector.png" alt="" className="dash-section3--img" />
+                            <img src="../images/mutual funds vector.png" alt="" className="dash-section3--img" />
                             <p className="dash-section3-content">Mutual Funds</p>
                         </div>
                     </div>
