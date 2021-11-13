@@ -113,6 +113,8 @@
 }
 .fourth-container--para{
     font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
     padding: 0rem 5rem  0rem 5rem;
 }
 .extra-bold{

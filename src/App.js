@@ -4,6 +4,8 @@ import Home from "./Components/home/main";
 import Login from "./Components/login/login"
 import Error from "./Components/404/404"
 import React from "react";
+import Navbar from "./Components/Navbar/Navbar"
+import Navbar2 from "./Components/Navbar2/Navbar2";
 import {
   BrowserRouter as Router,
   Switch,
@@ -25,38 +27,45 @@ function App() {
       <Switch>
       {/* Completely DOne */}
         <Route exact path="/">
+        <Navbar/>
           <Home />
           <Footer />
         </Route>
         {/* Completely DOne */}
         <Route exact path="/login">
+        <Navbar/>
             <Login />
             <Footer />
           </Route>
           {/* ASK AGE */}
           <Route exact path="/signup">
+          <Navbar/>
             <Signup />
             <Footer />
           </Route>
           {/* Protected Routes */}
           <Route exact path="/login/dashboard">
+          <Navbar2/>
             <Dashboard />
             <Footer />
           </Route>
           {/* Completely */}
           {/* Protected Routes */}
           <Route exact path="/login/prediction">
+          <Navbar2/>
             <Pred />
             <Footer />
           </Route>
           {/* Small Changes */}
           {/* Protected Routes */}
           <Route exact path="/login/profile">
+          <Navbar2/>
             <Profile />
             <Footer />
           </Route>
           {/* Protected Routes */}
           <Route exact path="/course-1-pg1">
+          <Navbar2/>
             <IntroCourse />
             <Footer />
           </Route>
@@ -66,10 +75,12 @@ function App() {
           </Route>
           
           <Route exact path="/course-1-pg2">
+          <Navbar2 />
             <Basic />
             <Footer />
           </Route>
           <Route exact path="/course-overview">
+          <Navbar2 />
             <CourseOver />
             <Footer />
           </Route>

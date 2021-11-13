@@ -7,7 +7,7 @@ import DevCard from './DevCard'
 const Home = () => {
     return (
         <>
-             <div className="main-container">
+            <div className="main-container">
                 <div className="first-container">
                     <div className="first-container-content">
                         <h1 className="first-container--heading">Learn<br /> the art of <br /> investing for free!!</h1>
@@ -21,19 +21,23 @@ const Home = () => {
                 <div className="third-container">
                     <h1 className="third-container--heading">What have we got for you?</h1>
                     <div className="third-container--card_container">
-                        <Card name="Complete Guide to Stock Market investment from scratch" working="true" page="home"/>
-                        <Card name="Complete Guide to Stock Market investment from scratch" working="false"/>
-                        <Card name="Complete Guide to Stock Market investment from scratch" working="false"/>
+                        <Card name="Complete Guide to Stock Market investment from scratch" working="true" page="home" />
+                        <Card name="Learn To pick the Mutual Find right for you" working="false" />
+                        <Card name="Getting started with investing in Cryptocurrency" working="false" />
                     </div>
                 </div>
                 <div className="fourth-container">
                     <div className="fourth-container-div1">
                         <h1 className="fourth-container--heading">Why Us?</h1>
-                        <p className="fourth-container--para extra-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, aliquid sapiente officiis repudiandae ratione voluptas sequi delectus quasi, asperiores, quas maiores? Cum, modi optio? Atque, quaerat nostrum quam quidem omnis debitis mollitia? Accusamus natus, laudantium cum quis nulla dolores praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore minima quam provident neque eligendi, debitis culpa consequuntur alias iusto commodi ipsam. Optio, nisi? Voluptatum optio consectetur quis quidem in, eligendi a aliquid adipisci voluptatem nisi fugit omnis. Modi dolore, dignissimos repudiandae voluptas fuga corporis tempore sit, temporibus minima maiores est!.</p>
+                        <p className="fourth-container--para extra-light">A one line answer to this question is- Because we have been there. We, four college individuals understand the value of money and we really want to
+                            enhance savings as well as investment culture in every age group. Through our website we aim to raise awareness for all age groups regarding all the investment related questions faced by them in their daily lives. <br />
+                            We not only support one platform or method for investment but believe in multi platform investments and wish to make a change in people’s lives by making them thorough with this concept. <br />
+                            Still in doubt?<br />
+                            Create an account and get to know more about our website.</p>
                     </div>
                     <div className="fourth-container-div2">
                         <h1 className="fourth-container--heading">Who is it for?</h1>
-                        <p className="fourth-container--para extra-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam recusandae pariatur minima dolorum sequi eaque voluptate nulla error amet veritatis.</p>
+                        <p className="fourth-container--para extra-bold">Well, to avail benefits from Outlay, you just need to be 18 plus and that’s it your are ready to go.</p>
                     </div>
                 </div>
 
@@ -44,13 +48,13 @@ const Home = () => {
                         </h1>
                     </div>
                     <div className="fifth-container--card_container">
-                        <DevCard/>
-                        <DevCard/>
-                        <DevCard/>
-                        <DevCard/>
+                        <DevCard name="Tilak Atri" message="Currently into MERN stack, I am a development freak and a coding enthusiast and look forward for providing more services regarding this." />
+                        <DevCard name="Guneet Singh" message="Been into back end since forever and want to change the norms for society by providing solutions to problems persisting in daily life." />
+                        <DevCard name="Divyanshi Choudhary" message="A content writer by heart, The UI designs that are seen on this website are designed by me along with my team and this is what my specialization is." />
+                        <DevCard name="Harshul Namdev" message="Front end development being my forte, I have done various projects in this field providing me good amount of exposure as well as the skills required." />
                     </div>
                 </div>
-            </div> 
+            </div>
         </>
     )
 }
