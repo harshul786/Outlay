@@ -1,0 +1,33 @@
+.icon-img{
+    width: auto;
+    height: 50px;
+    object-fit: fill;
+}
+
+.msg-cross{
+    zoom: 50%;
+}
+
+.block-msg{
+    width: 75%;
+    margin: 1rem 5rem;
+}
+
+.msg-cont-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d8eef3;
+    border-radius: 0.25rem;
+    padding-inline: 1rem;
+}
+.left-msg{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.msg{
+    font-family: 'Lato';
+    font-weight: bold;
+}
