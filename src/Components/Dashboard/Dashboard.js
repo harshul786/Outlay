@@ -96,11 +96,7 @@ const Dashboard = () => {
                     </div>
                     <div className="Border">
 
-<<<<<<< HEAD
-                        {userGoal.length === 0 ? <h2 className="crtgoal-dash">Does't look like you have added any Goal, Create one now!</h2> : userGoal.map((singleGoal, key) => {
-=======
                     {userGoal.length === 0 ? <h2 className="border-heading--h2">Looks like you haven't added any goal yet, Click Add to create one!</h2> : userGoal.map((singleGoal, key) => {
->>>>>>> 5a711e9e12a016842b29c4d95daa1091d29aa6d7
                             return <Goal GoalName={`I will Get a ${singleGoal.goalName}`} GoalAmount={`Need ${singleGoal.goalReturns}`} GoalTime={`In ${singleGoal.goalTime} Years`} GoalInvest={`Will invest ${singleGoal.goalMInvest} Monthly`} key={key} />
                         })}
 

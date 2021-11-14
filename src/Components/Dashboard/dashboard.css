@@ -5,11 +5,7 @@
     
 }
 .dash-main{
-<<<<<<< HEAD
-    padding-top: 2rem;
-=======
     padding-top: 4rem;
->>>>>>> 5a711e9e12a016842b29c4d95daa1091d29aa6d7
     background-color: #F9FBFE;
     font-family: M PLUS Rounded 1c;
 }
@@ -34,8 +30,10 @@
 }
 .border-heading--h2{
     font-size: 20px;
-    padding: 1rem;
+    padding: 1.1rem;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
 }
 .dash-hero{
     display: flex;

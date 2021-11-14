@@ -11,7 +11,9 @@ a{
 RESET STYLES
 =====
 */
-
+.form-container-img{
+  padding: 1rem;
+}
 
 .field__input{ 
     --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
@@ -219,6 +221,10 @@ RESET STYLES
 .container{
   margin-bottom: 5rem;
   margin-top: 2.8rem;
+}
+
+.form-container{
+  margin-bottom: 8rem;
 }
 
 @media screen and (max-width:650px){
