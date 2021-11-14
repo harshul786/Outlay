@@ -55,15 +55,17 @@ _This is the overview of EasyBills from Clients side.here are some screen shots 
 
  ![Add-Goal Page](public/Add-goal-page.png)
 
-
   ### Profile Page
 
  ![Profile Page](public/Profile-page.png)
 
- 
   ### Course Overview Page
 
- ![Course-Overview Page](public/Course-Overview.png)
+ ![Course-overview Page](public/Course-overview.png)
+
+  ### Course info Page
+
+ ![Course-info Page](public/Course-info.png)
 
 
 ## Creators
