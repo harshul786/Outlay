@@ -5,9 +5,17 @@
     
 }
 .dash-main{
-    padding-top: 8rem;
+    padding-top: 2rem;
     background-color: #F9FBFE;
     font-family: M PLUS Rounded 1c;
+}
+
+.crtgoal-dash{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-family: 'Poppins';
 }
 .goalsnav{
     
@@ -175,6 +183,9 @@
         flex-direction: column;
         padding-bottom: 1rem;
         margin-bottom: 2rem;
+    }
+    .dash-main{
+        padding-top: 1rem;
     }
     .immg{
         width: 250px;

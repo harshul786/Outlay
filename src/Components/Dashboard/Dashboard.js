@@ -96,7 +96,7 @@ const Dashboard = () => {
                     </div>
                     <div className="Border">
 
-                        {userGoal.length === 0 ? <h2>Does't look like you have added any goal, Create one now</h2> : userGoal.map((singleGoal, key) => {
+                        {userGoal.length === 0 ? <h2 className="crtgoal-dash">Does't look like you have added any Goal, Create one now!</h2> : userGoal.map((singleGoal, key) => {
                             return <Goal GoalName={`I will Get a ${singleGoal.goalName}`} GoalAmount={`Need ${singleGoal.goalReturns}`} GoalTime={`In ${singleGoal.goalTime} Years`} GoalInvest={`Will invest ${singleGoal.goalMInvest} Monthly`} key={key} />
                         })}
 

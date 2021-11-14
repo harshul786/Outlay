@@ -45,7 +45,7 @@ const Signup = () => {
             <div className="split-screen">
                 <div className="left" >
                     <img className="imageresize" alt="imghere" src="./images/bitcoin.png"
-                        height="25%" width="25%">
+                        >
                     </img> &nbsp;
                 </div>
                 <div className="right">
@@ -87,8 +87,10 @@ const Signup = () => {
 
                                         <label className="field field_v3">
                                             <p className="acct">
-                                                Already have an account? &nbsp;<a href="/login">Login </a>
+                                                <p className="login-signup"></p>Already have an account? &nbsp;<a href="/login">Login </a>
                                             </p>
+                                            
+                                                
                                             <div className="nav-buttonSignup">
                                                 <a href="/#" onClick={submit} className="nav-button--grpSignup primary--buttonSignup">Sign Up</a>
                                             </div>

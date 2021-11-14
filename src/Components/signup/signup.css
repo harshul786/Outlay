@@ -13,11 +13,9 @@ RESET STYLES
 */
 
 .imageresize {
-    width: 400px;
-    height: 450px;
-    object-fit: fill;
-    /* margin: auto 7px; */
-    margin-left: 8rem;
+  width: 45%;
+  height: auto;
+  object-fit: fill;
   }
 
 .field__input{ 
@@ -213,18 +211,24 @@ RESET STYLES
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+      padding: 5rem;
+      padding-left: 0rem;
   }
 
-
+.field__input{
+  width: 360px;
+}
   .right{
       width: 50%;
       height: auto;
   }
-  .left, .right{
+.right{
       display: flex;
       flex-direction: column;
-      margin-bottom: 10rem;
-      margin-top: 10rem;
+      
+     
+      justify-content: center;
+    align-items: flex-start;
       /* height: 200vh;
       width: auto; */
       /* justify-content: center;
@@ -251,7 +255,6 @@ RESET STYLES
     border-radius: 4px;
 }
 .nav-button--grpSignup{
-  margin-left: 5.4rem;
     padding: 0.6rem 1.5rem 0.6rem 1.5rem;
     font-size: 11.5px;
     border-radius: 4px;
@@ -261,48 +264,68 @@ RESET STYLES
 
     /*  */
 }
+.left{
 
-@media only screen and (min-device-width: 650px) and (max-device-width: 970px){
-  .nav-button--grpSignup{
-    font-size: 10.5px;
-  }
-  .acct{
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.field_v3{
+  display: flex;
+  justify-content: space-between;
+}
+
+.page {
+  box-sizing: border-box;
+  width: 100%;
+  /* max-width: 480px; */
+  /* margin: auto; */
+  padding: 1rem;
+  display: grid;
+  grid-gap: 30px;
+}
+
+@media only screen and (min-device-width: 650px) and (max-device-width: 1050px){
+  /* .nav-button--grpSignup{
+    font-size: 10.5px;zoom: 95%;
+    margin-left: 1.3rem;
+  } */
+  /* .acct{
     font-size: 12.5px;
+    
+  } */
+  .imageresize{
+    width: 250px;
   }
+  .split-screen{
+    gap:2rem;
+  }
+  
 }
 
 @media screen and (max-width:650px){
   .split-screen{
     display: flex;
     flex-direction: column;
-    margin-top: 4rem;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-  }.left{
-    margin: 0px;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    margin-top: 4rem;
-    margin-bottom: 0rem;
-    background-position-x: center;
-  }.right{
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    width: auto;
+    align-items: stretch;
   }
   .mm{
     white-space: pre;
   }
   .nav-button--grpSignup{
     margin-left: 1.3rem;
+    zoom: 80%;
   }
   .imageresize{
-    margin-left: 0px;
-    zoom:75%;
+    margin-left: 25%;
+    width: 70%;
   }
   .acct{
-    margin-top: 3px;
-    font-size: 10.5px;
+    margin-top: 4px;
+    font-size: 12.5px;
+  }
+  .page{
+    margin: auto;
   }
 }
