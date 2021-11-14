@@ -5,7 +5,7 @@ import "./signup.css"
 
 const Signup = () => {
 
-    const url="http://localhost:3001"
+    const url="http://1c414795-c31c-4890-a288-ac7312393901.k8s.civo.com"
     const [cred, setstate] = useState({name:"",age:"",email: "", password: ""})
     const history = useHistory()
 

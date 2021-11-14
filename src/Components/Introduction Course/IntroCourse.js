@@ -12,7 +12,7 @@ const IntroCourse = () => {
     //     "courses": [],
     //     "__v": 0
     //   }
-    const url="http://localhost:3001"
+    const url="http://1c414795-c31c-4890-a288-ac7312393901.k8s.civo.com"
 
     const getCourse=async()=>{
         const res = await fetch(`${url}/api/v1/goal/getgoal`, {

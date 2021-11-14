@@ -7,7 +7,7 @@ const Login = () => {
 
     const [cred, setstate] = useState({ email: "", password: "" })
     const history = useHistory()
-    const url="http://localhost:3001"
+    const url="http://1c414795-c31c-4890-a288-ac7312393901.k8s.civo.com"
 
     useEffect(() => {
         if(localStorage.getItem('token')){
