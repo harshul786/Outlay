@@ -61,11 +61,15 @@ _This is the overview of EasyBills from Clients side.here are some screen shots 
 
   ### Course Overview Page
 
- ![Course-overview Page](public/Course-overview.png)
+ ![Course-overview Page](public/Course-overview-page.png)
 
   ### Course info Page
 
- ![Course-info Page](public/Course-info.png)
+ ![Course-info Page](public/Course-info-page.png)
+
+   ### Course Page
+
+ ![course Page](public/Course-page.png)
 
 
 ## Creators
