@@ -55,7 +55,7 @@ const Signup = () => {
                                 <form action="">
                                     <div className="page">
                                         <label className="field field_v1">
-                                            <input className="field__input" onChange={onChange} placeholder="e.g. Steave Rogers" name="name" />
+                                            <input className="field__input" autoComplete="false" onChange={onChange} placeholder="e.g. Steave Rogers" name="name" />
                                             <span className="field__label-wrap">
                                                 <span className="field__label">Full Name</span>
                                             </span>
