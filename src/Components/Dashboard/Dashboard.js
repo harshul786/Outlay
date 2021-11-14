@@ -96,7 +96,11 @@ const Dashboard = () => {
                     </div>
                     <div className="Border">
 
+<<<<<<< HEAD
                         {userGoal.length === 0 ? <h2 className="crtgoal-dash">Does't look like you have added any Goal, Create one now!</h2> : userGoal.map((singleGoal, key) => {
+=======
+                    {userGoal.length === 0 ? <h2 className="border-heading--h2">Looks like you haven't added any goal yet, Click Add to create one!</h2> : userGoal.map((singleGoal, key) => {
+>>>>>>> 5a711e9e12a016842b29c4d95daa1091d29aa6d7
                             return <Goal GoalName={`I will Get a ${singleGoal.goalName}`} GoalAmount={`Need ${singleGoal.goalReturns}`} GoalTime={`In ${singleGoal.goalTime} Years`} GoalInvest={`Will invest ${singleGoal.goalMInvest} Monthly`} key={key} />
                         })}
 
@@ -111,11 +115,14 @@ const Dashboard = () => {
                     {state === "" ?
                         <div className="visiblity-continue-learning--nothing">
                             <div className="dash-section2-content">
-                                <div className="immg"><img src="../images/learning.png" alt="" className="dash-section2-content--img" />
+                            <div className="immg"><img src="../images/Course.png" alt="" className="dash-section2-content--img" />
                                 </div><div className="sec2-text">
-                                    <p className="dash-section2-content--heading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum sed ipsam quo velit rerum dolore.</p>
+                                <p className="dash-section2-content--heading">Getting started with investing in
+                                        Cryptocurrency</p>
 
-                                    <p className="dash-section2-content--text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum sed ipsam quo velit rerum dolore.</p>
+                                    <p className="dash-section2-content--text">This course is intended to give you
+                                        an overview on the topic:
+                                        Cryptocurrency- Who all can invest.</p>
                                 </div>
 
                             </div>
@@ -151,10 +158,12 @@ const Dashboard = () => {
                 </div>
                 <div className="dash-section4">
 
-                    <div className="third-container--card_container">
-                        <Card name="Complete Guide to Stock Market investment from scratch" working="true" />
-                        <Card name="Complete Guide to Stock Market investment from scratch" working="false" />
-                        <Card name="Complete Guide to Stock Market investment from scratch" working="false" />
+                    <div className="third-container">
+                        <div className="third-container--card_container">
+                            <Card name="Complete Guide to Stock Market investment from scratch" working="true" src="../images/Stock.jpg" />
+                            <Card name="Learn To pick the Mutual Find right for you" working="false" src="../images/Mutual.jpg" />
+                            <Card name="Getting started with investing in Cryptocurrency" working="false" src="../images/Crypto.jpg" />
+                        </div>
                     </div>
                     <br></br>
                 </div>
