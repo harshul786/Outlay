@@ -67,7 +67,7 @@ This is the overview of EasyBills from Clients side.here are some screen shots o
 
 ### Course info Page
 
- ![Course-info Page](public/images/Course-info.png)
+ ![Course-info Page](public/images/course-info.png)
 
 ### Course Page
 
